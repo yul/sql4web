@@ -7,6 +7,7 @@ Instead of using API's directly, programmer requests data via local database. Wh
 # How it works
 User:
 - issues SELECT SQL query
+
 SQL4Web:
 - detects api's to use and data to fetch by table and field names
 - queries data and saves response to local database (sqlite?)
@@ -16,6 +17,7 @@ User:
 - creates session (transaction)
 - sends UPDATE/INSERT/DELETE queries
 - commits changes
+
 SQL4Web:
 - detects changes and sends queries to create/update/delete records
 In order to detect changes, all records will have session id and deleted flag, for example, or maybe copy database and compare to find changes.
